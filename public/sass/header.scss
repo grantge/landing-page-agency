@@ -1,0 +1,191 @@
+header {
+    .nav-block {
+        display: flex;
+        justify-content: space-between;
+
+        margin-top: 25px;
+
+        padding: 10px;
+    }
+
+    nav {
+        a {
+
+            @media (max-width: $tablet-size) {
+                font-size: 20px;
+            }
+
+            @media (max-width: $phone-size) {
+                font-size: 25px;
+            }
+
+            margin-left: 50px;
+
+            color: $second-font;
+            font-size: 16px;
+            font-weight: 500;
+
+            text-decoration: none;
+        }
+
+        a:visited {
+            color: $grey;
+        }
+
+        a:active {
+            color: $grey;
+        }
+
+        button {
+
+            @media (max-width: $phone-size) {
+                font-size: 23px;
+            }
+
+            margin-left: 50px;
+            padding: 15px 23px;
+            
+            color: $blue;
+            font-size: 17px;
+            font-weight: 600;
+            letter-spacing: normal;
+
+            background-color: $white;
+
+            border-radius: 10px;
+            border: 1px solid $grey;
+            outline: none;
+        }
+    }
+}
+
+.image-block {
+
+    @media (max-width: $tablet-size) {
+        width: 600px;
+    }
+
+    display: flex;
+    justify-content: space-between;
+
+    margin-top: 25px;
+
+    .title {
+        margin: 90px 90px 0px 40px;
+
+
+        @media (max-width: $tablet-size) {
+            font-size: 60px;
+        }
+
+        
+        h2 {
+            @media (max-width: $phone-size) {
+                font-size: 70px;
+            }
+
+            color: $dark-blue;
+            font-family: $first-font;
+            font-size: 50px;
+            font-weight: 500;
+            line-height: 72px;
+            text-align: left;
+
+            margin-bottom: 20px;
+        }
+
+        p {
+
+            @media (max-width: $tablet-size) {
+                font-size: 25px;
+            }
+
+            @media (max-width: $phone-size) {
+                font-size: 30px;
+            }
+
+            font-size: 21px;
+            font-weight: 500;
+            color: $black;
+
+            margin-bottom: 60px;
+        }
+    }
+
+    .form {
+        input {
+
+            @media (max-width: $tablet-size) {
+                margin: 0;
+            }
+
+            @media (max-width: $phone-size) {
+                font-size: 22px;
+            }
+
+            padding: 20px 130px 20px 20px;
+            border-radius: 25px;
+            background-color: $light-blue;
+
+            outline: none;
+            border: none;
+
+            font-family: $second-font;
+            font-size: 16px;
+            font-weight: 400;
+            color: $grey;
+
+            margin-bottom: 30px;
+        }
+
+        .form-button {
+            input {
+                width: 165px;
+                padding: 20px 0 20px 20px;
+            }
+
+            button {
+
+                @media (max-width: $tablet-size) {
+                    margin-left: 10px;
+                }
+
+                @media (max-width: $phone-size) {
+                    font-size: 22px;
+                    margin-left: 70px;
+                }
+
+                padding: 20px 55px;
+                margin-left: 5px;
+
+                font-family: $second-font;
+                font-size: 16px;
+                font-weight: 600;
+
+                color:$white;
+                background-color: $blue;
+                border-radius: 25px;
+                border: none;
+                outline: none;
+
+            }
+        }
+    }
+
+    .image {
+
+        
+        background-color: $light-blue;
+
+        img {
+
+            @media (max-width: $tablet-size) {
+                display: none;
+                // width: 520px;
+            }
+            
+            margin-bottom: -35px;
+            padding: 200px 100px 0;
+        }
+    }
+}

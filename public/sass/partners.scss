@@ -1,0 +1,27 @@
+.partners {
+    background-color: $light-grey;
+    padding-top: 0.1px;
+    margin-bottom: 50px;
+}
+
+.partners-logos {
+    display: flex;
+    justify-content: space-around;
+
+    @media (max-width: $middle-size) {
+        height: 50px;
+    }
+
+    @media (max-width: $phone-size) {
+        flex-direction: column; 
+        height: inherit;  
+    }
+    
+    img {
+        @media (max-width: $phone-size) {
+            width: 300px;
+            margin: 0 auto 55px;
+        }
+    }
+   
+}

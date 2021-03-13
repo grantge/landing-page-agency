@@ -1,0 +1,290 @@
+.how-it-works {
+    padding: 1px 0;
+    background-color: $light-grey;
+    margin-bottom: 150px;
+}
+
+.work-block {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 150px;
+
+    @media (max-width: $tablet-size) {
+        padding-left: 30px;
+    }
+
+    @media (max-width: $middle-size) {
+        padding-left: 30px;
+        display: block;
+    }
+
+    .work-item {
+        width: 250px;
+
+        @media (max-width: $phone-size) {
+            width: 680px;
+        }
+        h5 {
+            font-family: $first-font;
+            font-size: 30px;
+            font-weight: 400;
+
+            color: $dark-blue;
+
+            margin-bottom: 15px;
+
+            @media (max-width: $phone-size) {
+                font-size: 70px;
+            }
+        }
+
+        p {
+            color: $black;
+            font-family: $second-font;
+            font-size: 18px;
+            font-weight: 400;
+            line-height: 28px;
+            text-align: left;
+
+            @media (max-width: $phone-size) {
+                font-size: 50px;
+                line-height: normal;
+            }
+        }
+    }
+}
+
+.work-info {
+    width: 730px;
+    margin: 0 auto;
+    padding: 65px 100px;
+
+    background-color: $blue;
+    box-shadow: 0 0 30px rgba(63, 114, 175, 0.5);
+
+    position: relative;
+
+    @media (max-width: $phone-size) {
+        display: none;
+    }
+
+    h4 {
+        color: $white;
+        font-family: $second-font;
+        font-size: 48px;
+        font-weight: 500;
+
+        text-align: center;
+
+        margin-bottom: 20px;
+
+        @media (max-width: $phone-size) {
+            font-size: 53px;
+        }
+    }
+
+    p {
+        opacity: 0.9;
+        color: $white;
+        font-family: $second-font;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 31px;
+
+        text-align: center;
+
+        margin-bottom: 35px;
+
+        @media (max-width: $phone-size) {
+            font-size: 23px;
+        }
+    }
+
+    button {
+        margin-bottom: 50px;
+        padding: 20px 60px;
+        border-radius: 25px;
+        outline: none;
+        border: none;
+        
+
+        display: block;
+        margin: 0 auto;
+
+        color: $white;
+        background-color: $dark-blue;
+        font-family: $second-font;
+        font-size: 16px;
+        font-weight: 500;
+
+        @media (max-width: $phone-size) {
+            font-size: 22px;
+        }
+    }
+
+    img {
+        position: absolute;
+    }
+
+    .left {
+        top: 0;
+        left: 0;
+    }
+
+    .right {
+        bottom: 0;
+        right: 0;
+    }
+}
+
+// part of works container (width 100%)
+
+.work-form {
+    background-color: $blue;
+    position: relative;
+
+    img {
+        @media (max-width: $tablet-size) {
+            width: 470px;
+        }
+
+        position: absolute;
+    }
+
+    .left {
+        top:0;
+        right: 0;
+    }
+
+    .right {
+        top:0;
+    }
+}
+
+.form-block {
+    @media (max-width: $tablet-size) {
+        display: block;
+    }
+
+    @media (max-width: $phone-size) {
+        padding: 70px 60px;
+    }
+
+    display: flex;
+    justify-content: space-between;
+
+    padding: 70px 140px;
+
+    .form-number  {
+
+        @media (max-width: $tablet-size) {
+            width: 250px;
+            margin-bottom: 25px;
+        }
+
+        @media (max-width: $phone-size) {
+            width: 450px;
+        }
+
+
+        display: flex;
+        flex-direction: column;
+
+        label {
+            color: $white;
+            font-family: $second-font;
+            font-size: 18px;
+            font-weight: 400;
+            text-align: left;
+
+            margin-bottom: 10px;
+
+            @media (max-width: $phone-size) {
+                font-size: 40px;;
+            }
+        }
+
+        input {
+
+            @media (max-width: $phone-size) {
+                width: 450px;
+                padding: 25px 10px;
+            }
+
+            padding: 10px 10px;
+            border-radius: 24px;
+            border: none;
+            outline: none;
+        }
+    }
+
+
+
+    .form-payroll  {
+        display: flex;
+        flex-direction: column;
+
+
+        @media (max-width: $tablet-size) {
+            width: 250px;
+        }
+
+        @media (max-width: $phone-size) {
+            width: 450px;
+        }
+
+        label {
+            color: $white;
+            font-family: $second-font;
+            font-size: 18px;
+            font-weight: 400;
+            text-align: left;
+
+            margin-bottom: 10px;
+
+            @media (max-width: $phone-size) {
+                font-size: 40px;;
+            }
+        }
+
+        input {
+            padding: 10px 10px;
+            border-radius: 24px;
+            border: none;
+            outline: none;
+
+            @media (max-width: $phone-size) {
+                width: 450px;
+                padding: 25px 10px;
+            }
+        }
+
+
+    }
+
+    button {
+        margin-top: 30px;
+        height: 35px;
+
+
+        padding: 0px 80px;
+
+        background-color: $blue;
+        color: $white;
+        font-family: $second-font;
+        font-size: 16px;
+        font-weight: 500;
+
+        text-align: center;
+        outline: none;
+
+
+        border-radius: 24px;
+        border: 1px solid #f9f7f7;
+
+        @media (max-width: $phone-size) {
+            height: 80px;
+            font-size: 30px;
+        }
+    }
+}

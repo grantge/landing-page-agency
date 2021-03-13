@@ -1,0 +1,103 @@
+.review {
+    padding-top: 0.1px;
+}
+
+.review-block {
+    display: flex;
+    justify-content: space-around;
+
+    @media (max-width: $middle-size) {
+        padding: 20px;
+    }
+
+    @media (max-width: $phone-size) {
+        flex-direction: column;
+    }
+
+    
+
+    .review-item {
+        width: 470px;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+        border-radius: 10px;
+
+        padding: 30px 40px;
+
+        position: relative;
+
+        @media (max-width: $phone-size) {
+            margin: 0 auto 25px;
+            width: 700px;
+        }
+            
+        first {
+            @media (max-width: $middle-size) {
+                padding: 20px;
+            }
+        
+        }
+
+
+        span {
+
+            @media (max-width: $middle-size) {
+                top: -10px;
+                left: 140px;
+            }
+
+            @media (max-width: $phone-size) {
+                left: 300px;
+            }
+
+            position: absolute;
+
+            top: -35px;
+            left: 190px;
+
+            color: $light-blue;
+            font-family: $first-font;
+            font-size: 250px;
+            font-weight: 400;
+
+            z-index: -1;
+        }
+
+        .quote {
+            color: $black;
+            font-family: $second-font;
+            font-size: 18px;
+            font-weight: 500;
+            line-height: 26px;
+            text-align: center;
+
+            margin-bottom: 20px;
+
+            @media (max-width: $phone-size) {
+                font-size: 35px;
+                line-height: normal;
+            }
+        }
+
+        .author {
+            color: $grey;
+            font-family: $second-font;
+            font-size: 16px;
+            font-weight: 400;
+
+            text-align: center;
+
+            @media (max-width: $phone-size) {
+                font-size: 30px;
+                line-height: normal;
+            }
+        }
+
+    }
+}
+
+.first {
+    @media (max-width: $middle-size) {
+        margin-right: 15px;
+    }
+}
+

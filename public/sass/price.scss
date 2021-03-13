@@ -1,0 +1,108 @@
+.price-info {
+    width: 700px;
+    margin: 0 auto 80px;
+
+    display: flex;
+    justify-content: space-around;
+
+    @media (max-width: $phone-size) {
+        width: 500px;
+        flex-direction: column;
+        
+    }
+
+    .price-item {
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+        border-radius: 10px;
+
+        @media (max-width: $phone-size) {
+            margin-bottom: 50px;
+        }
+
+        h4 {
+            margin-top: 25px;
+            padding: 10px 130px;
+
+            background-color: $dark-blue;
+            color: $white;
+            font-family: $second-font;
+            font-size: 22px;
+            font-weight: 500;
+
+            text-align: center;
+
+            @media (max-width: $phone-size) {
+                margin-top: 40px;
+                font-size: 40px;
+            }
+        }
+
+        h5 {
+            margin-top: 30px;
+
+            color: $dark-blue;
+            font-family: $second-font;
+            font-size: 30px;
+            font-weight: 700;
+
+            text-align: center;
+
+            @media (max-width: $phone-size) {
+                font-size: 40px;
+            }
+
+            &::after {
+                content: '';
+                display: block;
+                width: 260px;
+                height: 1px;
+                background: $dark-blue;
+    
+                margin: 30px auto;
+            }
+        }
+
+        ul {
+            li {
+                list-style-type: none;
+
+                margin-bottom: 20px;
+
+                color: $grey;
+                font-family: $second-font;
+                font-size: 15px;
+                font-weight: 500;
+
+                text-align: center;
+
+                @media (max-width: $phone-size) {
+                    font-size: 25px;
+                }
+            }
+        }
+
+        button {
+            display: block;
+            margin: 0 auto;
+            padding: 15px 70px;
+            position: relative;
+            bottom: -23px;
+
+
+
+            color: $white;
+            font-family: $second-font;
+            font-size: 16px;
+            font-weight: 500;
+
+            border-radius: 25px;
+            background-color: $dark-blue;
+            border: none;
+            outline: none;
+
+            @media (max-width: $phone-size) {
+                font-size: 30px;
+            }
+        }
+    }
+}

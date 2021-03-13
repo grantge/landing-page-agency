@@ -1,0 +1,64 @@
+.map {
+    background-image: url(/images/faq-map.jpg);
+    background-size: cover;
+
+    padding: 100px 200px;
+
+    @media (max-width: $middle-size) {
+        padding: 100px 70px;
+    }
+    
+    .map-contact {
+        width: 310px;
+        background-color: $white;
+
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+        border-radius: 10px;
+
+        padding: 60px 130px 60px 30px;
+
+        @media (max-width: $phone-size) {
+            width: 500px;
+            
+        }
+        
+        h3 {
+            color: $black;
+            font-family: $second-font;
+            font-size: 26px;
+            font-weight: 400;
+
+            margin: 0 0 50px 0;
+
+            @media (max-width: $phone-size) {
+                font-size: 45px;
+            }
+        }
+
+        h4 {
+            color: $grey;
+            font-family: $second-font;
+            font-size: 20px;
+            font-weight: 400;
+            text-align: left;
+
+            @media (max-width: $phone-size) {
+                font-size: 30px;
+            }
+        }
+
+        p {
+            color: $grey;
+            font-family: $second-font;
+            font-size: 20px;
+            font-weight: 400;
+            text-align: left;
+
+            margin-bottom: 15px;
+
+            @media (max-width: $phone-size) {
+                font-size: 25px;
+            }
+        }
+    }
+}
